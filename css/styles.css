@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* header styles */
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 1.25rem; /* Original: 20px */
+} 
+
+header img {
+    width: 1.4375rem; /* Original: 23px */
+    height: 1.4375rem; /* Original: 23px */
+    margin-right: 0.1875em; /* Original: 3px */
+}
+
+header span {
+    font-size: 0.7rem;
+}
+/* header typography */
+
+header h4 {
+    font-size: 0.84375rem; /* Original: 13.5px */
+    letter-spacing: -0.4px;
+    margin: 0;
+}
+
+header a {
+    display: inline-block;
+    color: #282828;
+    font-size: 0.75rem; /* Original: 12px */
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.header-link-one {
+    margin-left: auto;
+}
+
+.header-link-two {
+    margin: 0 0 0 1.5rem; /* Original: 24px */
+}
+
+/* section one styles */
+
+section {
+    color: #fff;
+    padding: 5.625rem 1.25rem 1.25rem; /* Original: 90px 20px 20px */
+}
+
+/* only adds background-image to the main page section */
+.main-section {
+    background-image: url('images/article-image-hero.png');
+    background-size: cover;
+}
+
+/* my story page section styles */
+.my-story-section {
+    color: #282828;
+    padding-top: 4.375rem; /* Original: 70px */
+}
+
+.my-story-section img {
+    display: block;
+    margin: 2.25rem auto 0; /* Original: 36px auto 0 */
+    width: 80vw;
+}
+
+/* section typography */
+
+section h1 {
+    margin: 0.5rem 0;
+}
+
+.section-date {
+    font-size: 0.75rem; /* Original: 12px */
+}
+
+section p {
+    margin: 0;
+}
+
+/* MAIN styles */
+
+main {
+    padding: 1.25rem; /* Original: 20px */
+}
+
+/* my story main styles */
+.my-story-main h4 {
+    margin: 0;
+}
+
+.line {
+    border-bottom: lightgray 1.5px solid;
+}
+
+main h4 {
+    text-align: center;
+    grid-column: 1 / -1;
+    margin: 0 auto;
+    display: block;
+    text-decoration: underline;
+}
+
+/* hides 3 more blogs, reveal when "view more" is clicked */
+.hide {
+    display: none;
+}
+
+main img {
+    width: 100%;
+    padding: 0.875em 0; /* Original: 14px 0 */
+}
+
+/* was having truble making these 3 images from a different sourse to have the exact same width an height as the first 6, setteled for 48% hight as it looks the best but still dosnt scale well, please tell me if there is a better way :)*/
+.blogs1 img,
+.blogs2 img,
+.blogs3 img {
+    width: 100%;
+    height: 48%;
+    object-fit: fill;
+    border-radius: 4px;
+}
+
+
+/* about me main styles */
+.my-face-img {
+    width: 11.25em; /* Original: 180px */
+    border-radius: 50%;
+}
+
+.about-me-main h1 {
+    font-size: 1.5rem; /* Original: 24px */
+}
+
+/* MAIN typography */
+
+main h2 {
+    margin: 0.5625rem 0; /* Original: 9px 0 */
+}
+
+.main-date {
+    margin: 0;
+    font-size: 0.88640625rem; /* Original: 14.173px */
+}
+
+main p {
+    margin-bottom: 1.6875rem; /* Original: 27px */
+}
+
+/* footer styles */
+
+footer {
+    font-size: 0.75rem; /* Original: 12px */
+    color: #fff;
+    background: #282828;
+    text-align: center;
+    padding: 2.5rem; /* Original: 40px */
+}
+
+/* footer typography */
+
+footer h4 {
+    margin-bottom: 2px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* media queries */
+
+@media(min-width: 769px) {
+    
+    /* styles that apply to all pages */
+    header,
+    section, 
+    main {
+        padding-left: 3.125rem; /* Original: 50px */
+        padding-right: 3.125rem; /* Original: 50px */
+    }
+    
+    header img {
+        margin-left: 0;
+    }
+    
+    .blogs-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(auto-fit, auto);
+        grid-gap: 1em;
+    }
+    
+    /* adds padding to the section when the screen is bigger */
+    .main-section {
+        padding-top: 25%;
+    }
+    
+    main img {
+        width: 1fr;
+    }
+    
+    /* my story page */
+    .my-story-section img {
+        width: 1fr;
+    }
+    
+    /* about me page */
+    .about-me-main h1 {
+        font-size: 1.875rem; /* Original: 30px */
+    }
+
+}
