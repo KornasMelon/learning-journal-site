@@ -5,7 +5,7 @@
 function renderHeader() {
     const headerCode = `<img src="images/image17.png" alt="icon image">
             <h4>My sausage journal</h4>
-            <a href="main.html" class="header-link-one">HOME</a>
+            <a href="index.html" class="header-link-one">HOME</a>
             <a 
                 href="my-story.html" 
                 class="header-link-two">MY STORY<br>
