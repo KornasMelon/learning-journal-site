@@ -6,6 +6,20 @@ html,
 body {
     margin: 0;
     padding: 0;
+    font-family: verdana, 'sans-serif';
+    line-height: 140%;
+}
+
+h1 {
+    line-height: 120%;
+}
+
+p {
+    font-size: 1.125rem;
+}
+
+.blogs-grid p {
+    font-size: 1rem;
 }
 
 /* header styles */
@@ -58,7 +72,7 @@ section {
 
 /* only adds background-image to the main page section */
 .main-section {
-    background-image: url('images/article-image-hero.png');
+    background-image: url('../images/main-background-image.png');
     background-size: cover;
 }
 
@@ -133,6 +147,14 @@ main img {
 
 
 /* about me main styles */
+.about-me-main {
+    text-align: center;
+}
+
+.about-me-main .blogs-grid {
+    text-align: left;
+}
+
 .my-face-img {
     width: 11.25em; /* Original: 180px */
     border-radius: 50%;
@@ -193,6 +215,10 @@ footer p {
         margin-left: 0;
     }
     
+    p {
+        font-size: 1rem;
+    }
+
     .blogs-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
