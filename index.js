@@ -1,6 +1,8 @@
 
-// make hamburger navigation. 
-// make notes everywhere
+// make about me text have max with(its too long)
+// make about me image good again
+// make my story image look better(too big)
+// add more spacing between lines where its needed
 
 function renderHeader() {
     const headerCode = `<img src="https://icons.iconarchive.com/icons/iconarchive/fat-sugar-food/512/Meat-Sausages-icon.png" alt="icon image">

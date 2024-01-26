@@ -160,6 +160,7 @@ main img {
 
 .my-face-img {
     width: 11.25em; /* Original: 180px */
+    height: 13em;
     border-radius: 50%;
 }
 
@@ -242,6 +243,7 @@ footer p {
     /* my story page */
     .my-story-section img {
         width: 1fr;
+        max-height: 10%;
     }
     
     /* about me page */
