@@ -15,7 +15,7 @@ h1 {
 }
 
 p {
-    font-size: 1.125rem;
+    font-size: 1rem;
 }
 
 .blogs-grid p {
@@ -74,6 +74,7 @@ section {
 .main-section {
     background-image: url('../images/main-background-image.png');
     background-size: cover;
+    padding: 50px 50px 60px 55px;
 }
 
 /* my story page section styles */
@@ -147,11 +148,13 @@ main img {
 
 
 /* about me main styles */
-.about-me-main {
-    text-align: center;
-}
 
 .about-me-main .blogs-grid {
+    text-align: left;
+}
+
+.about-me-main h4 {
+    text-decoration: none;
     text-align: left;
 }
 
@@ -216,7 +219,7 @@ footer p {
     }
     
     p {
-        font-size: 1rem;
+        font-size: 1.125rem;
     }
 
     .blogs-grid {
@@ -233,6 +236,7 @@ footer p {
     
     main img {
         width: 1fr;
+        height: 60%
     }
     
     /* my story page */

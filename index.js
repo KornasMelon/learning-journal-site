@@ -3,7 +3,7 @@
 // make notes everywhere
 
 function renderHeader() {
-    const headerCode = `<img src="images/image17.png" alt="icon image">
+    const headerCode = `<img src="https://icons.iconarchive.com/icons/iconarchive/fat-sugar-food/512/Meat-Sausages-icon.png" alt="icon image">
             <h4>My sausage journal</h4>
             <a href="index.html" class="header-link-one">HOME</a>
             <a 
